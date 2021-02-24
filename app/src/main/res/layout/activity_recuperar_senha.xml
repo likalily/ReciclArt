@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperarSenha">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="460dp"
+        android:layout_height="852dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <ImageView
+
+        android:id="@+id/img_logo"
+        android:layout_width="397dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/texto_recuperação"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="Insira o seu e-mail abaixo para recuperar senha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campo_text_input"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint=""
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_recuperação">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recuperar_senha"
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="RECUPERAR SENHA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_text_input" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/voltar"
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:hint="VOLTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recuperar_senha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
