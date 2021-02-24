@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_cadastro.xml" value="0.25" />
+        <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_elaborado_por.xml" value="0.15" />
         <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_login2.xml" value="0.22" />
         <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_nossa_missao.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_nossa_missao2.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_nossa_missao3.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_nova_senha.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_recuperar_senha.xml" value="0.25" />
         <entry key="..\:/Users/likal/AndroidStudioProjects/ReciclArt/app/src/main/res/layout/activity_senha_modificada.xml" value="0.17916666666666667" />

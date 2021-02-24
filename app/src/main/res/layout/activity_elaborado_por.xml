@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElaboradoPor">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="460dp"
+        android:layout_height="852dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <ImageView
+
+        android:id="@+id/img_logo"
+        android:layout_width="397dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/elaborado_por"
+        android:layout_width="401dp"
+        android:layout_height="322dp"
+        android:layout_gravity="center_horizontal"
+        android:text="       Pensado e elaborado  como projeto de graduação no curso de  Análise Desenvolvimento de Sistemas, o Reciclarte tem como objetivo minimizar os descarte irregular de resíduos sólidos na cidade de Ferraz de Vasconcelos e, em breve, ser implementado também em outras cidades do Alto Tietê.         Atualmente, o descarte irregular é um grande problema que resulta em grandes enchentes nas épocas de alto volume de chuva."
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <ImageView
+
+        android:id="@+id/computador"
+        android:layout_width="397dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/rectangle_43"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/voltar1"
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:hint="VOLTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computador" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

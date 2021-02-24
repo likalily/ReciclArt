@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="460dp"
+        android:layout_height="852dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <ImageView
+
+        android:id="@+id/img_logo"
+        android:layout_width="397dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/cadastro_titulo"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:text="CADASTR0"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+    <TextView
+        android:id="@+id/nome_"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="48dp"
+        android:gravity="top"
+        android:text="Nome"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_titulo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_text_"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:hint="Digite seu nome"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_titulo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/email_"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:text="E-mail"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_text_email"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:hint="Digite seu email"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_text_">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email_"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="356dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/endereco_"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:text="ENDEREÇO"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_text_endereco"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="288dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:hint="Digite seu endereço"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_endereco_"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPostalAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_text_cidade"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:hint="Digite sua cidade"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endereco_">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_cidade_"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPostalAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/estado_"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:text="SP"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_text_endereco" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_text_codigo"
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:hint="Digite seu Código Postal"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_text_cidade">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_codigo"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:inputType="textPostalAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
